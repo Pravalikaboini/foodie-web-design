@@ -1,0 +1,178 @@
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: aliceblue;
+ 
+}
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.title{
+    text-align: center;
+    color: black;
+    margin-left: 15px;
+    font-size: 2rem;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #ea956b, #0a0707);
+    color: white;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+img {
+    width: 80%;
+    border-radius: 10px;
+}
+nav {
+            
+    color: white;
+    padding: 10px;
+    align-items:center;
+    display: flex;
+    justify-content: space-between;
+
+
+     
+}
+.nav-links{
+ flex:1;
+ text-align: right;
+
+}
+.nav-links ul li {
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+
+.nav-links ul li a{
+color:#7b2828;
+text-decoration: none;
+font-size: 20px;
+}
+.nav-links ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: #7a1d1d;
+display: block;
+margin: auto;
+transition: 0.5s;
+} 
+.nav-links ul li:hover::after{
+width: 100%;
+}
+.text-box{
+width:90%;
+color: #0c0a0a;
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%, -50%);
+text-align: center;
+
+}
+.text-box h1{
+font-size: 62px;
+
+}
+.text-box p{
+margin: 10px 0 40px;
+font-size: 20px;
+color: #020202;
+}
+.hero-btn{
+display: inline-block;
+text-decoration: none;
+color: #fff;
+border: 1px solid #fff;
+background: transparent;
+font-size: 30px;
+position: relative;
+padding: 12px 34px;
+cursor: pointer;
+
+
+}
+.hero-btn:hover{
+border: 1px solid #131010;
+background: #ff0000;
+transition: 1s;
+}
+
+
+form{
+width: 300px;
+margin:  0 auto;
+padding: 20px;
+background: palevioletred;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+input{
+width: 90%;
+padding: 10px;
+margin-bottom: 10px;
+border: none;
+border-radius: 4px;
+outline: none;
+font-size: 16px;
+}
+
+
+@media (max-width: 768px)
+{
+    .nav{ 
+      flex-direction: column;
+      font-size: 1.5rem;
+      
+    }
+    .logo{
+        width:60px;
+        margin-bottom: 10px;
+    
+    }
+    .title{
+        font-size: 1.5rem;
+        padding-left: 10%;
+    }
+    }
+    @media (min-width: 769px) {
+        .nav {
+            flex-direction: row;
+            font-size: 18px;
+            
+        }
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #ff7043;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }  
+
+
+
+  
